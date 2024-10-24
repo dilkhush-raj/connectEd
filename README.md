@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ConnectEd Student Portal
+
+Welcome to the **ConnectEd Student Portal**, a responsive and intuitive frontend web application built using Next.
+
+## Tech Stack
+
+- **Next.js**: Version 15.0.1 - A powerful React framework for building web applications with server-side rendering and static site generation.
+- **React**: Version 19.0.0-rc - The latest release candidate version of React for building user interfaces.
+- **React DOM**: Version 19.0.0-rc - The package that serves as the entry point for rendering React components in the DOM.
+- **Tailwind CSS**: Version 3.4.1 - A utility-first CSS framework for creating responsive, customizable UI components.
+- **TypeScript**: Version 5 - JavaScript with static typing to improve developer experience and code quality.
+- **ESLint**: Version 8 - A pluggable linting utility to ensure code quality and consistency.
+- **Prettier**: Version 3.3.3 - An opinionated code formatter that helps maintain a consistent code style.
+- **PostCSS**: Version 8 - A tool for transforming CSS with JavaScript plugins, used for optimizing CSS in production.
+- **Prettier Plugin Tailwind CSS**: Version 0.6.8 - A Prettier plugin to sort Tailwind CSS classes automatically.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Node.js**: [Download](https://nodejs.org/) (version 14.x or later recommended)
+- **npm** or **yarn**: Node package manager.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/dilkhush-raj/conneceEd.git
+   cd connectEd
+   ```
+
+2. Install dependencies:
+
+   Using npm:
+
+   ```bash
+   npm install
+   ```
+
+   Or using yarn:
+
+   ```bash
+   yarn install
+   ```
+
+### Running the Application
+
+To start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app running.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the project for production:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then, you can start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you have any questions or feedback, reach out via [dilkhush_raj@outlook.com](mailto:dilkhush_raj@outlook.com) or visit [https://dilkhushraj.me](https://dilkhushraj.me).
