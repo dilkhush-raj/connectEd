@@ -22,14 +22,14 @@ export default function Navbar({
   subjects: string;
 }) {
   return (
-    <nav className="bg-primary flex h-[98px] items-center justify-between px-[50px] text-white">
+    <nav className="bg-primary flex h-[98px] items-center justify-between px-[20px] text-white md:px-[50px]">
       <div>
         <Image src={logo} width={96.67} height={49.03} alt={"ConnectEd"} />
       </div>
-      <h1 className="text-center text-[32px] font-bold leading-none">
+      <h1 className="text-center text-xl font-bold leading-tight md:text-[32px]">
         Student Portal
       </h1>
-      <div>
+      <div className="hidden md:block">
         <p className="text-right text-[23.333px] font-semibold">
           Hello, {name}!
         </p>
