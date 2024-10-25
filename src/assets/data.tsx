@@ -1,4 +1,10 @@
-import {BookIcon, ContactIcon, WhatsAppIcon} from "./icons";
+import {
+  BookIcon,
+  ClipboardIcon,
+  ContactIcon,
+  SunIcon,
+  WhatsAppIcon,
+} from "./icons";
 
 export const QUICK_LINKS: Array<{
   id: number;
@@ -29,5 +35,66 @@ export const QUICK_LINKS: Array<{
     description:
       "Click here to contact your teacher for any doubts or concerns.",
     variant: "primary",
+  },
+];
+
+export const ANNOUNCEMENT_DATA: Array<{
+  id: number;
+  icon?: React.ReactNode;
+  announcement: string;
+}> = [
+  {
+    id: 1,
+    icon: <>{SunIcon}</>,
+    announcement:
+      "On account of Independence Day, August 15th will be a holiday.",
+  },
+  {
+    id: 2,
+    icon: <>{ClipboardIcon}</>,
+    announcement:
+      "Reminder to finish your assignments and submit them by Monday..",
+  },
+];
+
+export const CLASS_RECORDINGS: Array<{
+  id: number;
+  standard: number;
+  subjects: string;
+  topic: string;
+  date: Date;
+  videoUrl: string;
+}> = [
+  {
+    id: 1,
+    standard: 7,
+    subjects: "Math",
+    topic: "Algebraic Equations",
+    date: new Date("2024-10-24"),
+    videoUrl: "/assets/video.jpeg",
+  },
+  {
+    id: 2,
+    standard: 7,
+    subjects: "Math",
+    topic: "Differential Maths",
+    date: new Date("2024-10-24"),
+    videoUrl: "/assets/video.jpeg",
+  },
+  {
+    id: 3,
+    standard: 7,
+    subjects: "Science",
+    topic: "Fundamentals of Organic Chemistry",
+    date: new Date("2024-10-24"),
+    videoUrl: "/assets/video.jpeg",
+  },
+  {
+    id: 4,
+    standard: 7,
+    subjects: "Math",
+    topic: "Trignometry 101",
+    date: new Date("2024-10-24"),
+    videoUrl: "/assets/video.jpeg",
   },
 ];
