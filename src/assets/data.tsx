@@ -1,4 +1,10 @@
-import {BookIcon, ContactIcon, WhatsAppIcon} from "./icons";
+import {
+  BookIcon,
+  ClipboardIcon,
+  ContactIcon,
+  SunIcon,
+  WhatsAppIcon,
+} from "./icons";
 
 export const QUICK_LINKS: Array<{
   id: number;
@@ -29,5 +35,24 @@ export const QUICK_LINKS: Array<{
     description:
       "Click here to contact your teacher for any doubts or concerns.",
     variant: "primary",
+  },
+];
+
+export const ANNOUNCEMENT_DATA: Array<{
+  id: number;
+  icon?: React.ReactNode;
+  announcement: string;
+}> = [
+  {
+    id: 1,
+    icon: <>{SunIcon}</>,
+    announcement:
+      "On account of Independence Day, August 15th will be a holiday.",
+  },
+  {
+    id: 2,
+    icon: <>{ClipboardIcon}</>,
+    announcement:
+      "Reminder to finish your assignments and submit them by Monday..",
   },
 ];
