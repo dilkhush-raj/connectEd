@@ -1,12 +1,18 @@
 import VideoPlayer from "./video-player";
 import {CloseIcon} from "@/assets/icons";
 
+interface DataProps {
+  standard: string | number;
+  subjects: string;
+  topic: string;
+}
+
 export default function PlayerModal({
   data,
   handleClose,
 }: {
-  data: any;
-  handleClose: any;
+  data: DataProps | null;
+  handleClose: () => void;
 }) {
   if (!data) return null;
   return (

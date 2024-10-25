@@ -10,9 +10,6 @@ import {
 export default function VideoPlayer({videoUrl}: {videoUrl: string}) {
   const videoLength = "1:20:21";
   const videoProgress = "35:28";
-  const progressPercent = Math.round(
-    (Number(videoProgress) / Number(videoLength)) * 100
-  );
 
   return (
     <div className="relative overflow-hidden rounded-[28px] bg-[#1E1E1E]">

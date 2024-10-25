@@ -4,7 +4,6 @@ import {SearchIcon} from "@/assets/icons";
 import Card from "./card";
 import VideoCard from "./video-card";
 import {useState} from "react";
-import VideoPlayer from "./video-player";
 import PlayerModal from "./player-modal";
 
 export default function ClassRecordingCard({
