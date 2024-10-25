@@ -74,7 +74,7 @@ const VideoCard = ({
           {formatDate(date)}
         </div>
       </div>
-      <div className="relative overflow-hidden rounded">
+      <div className="relative flex-shrink-0 overflow-hidden rounded">
         <div
           className={`absolute inset-0 ${color[subjects].color} mix-blend-multiply`}
         ></div>
@@ -84,7 +84,7 @@ const VideoCard = ({
         <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 text-xs text-white group-hover:block">
           play now
         </div>
-        <img src={videoUrl} alt="video" className="w-[100px] flex-shrink-0" />
+        <img src={videoUrl} alt="video" className="w-[100px]" />
       </div>
     </div>
   );

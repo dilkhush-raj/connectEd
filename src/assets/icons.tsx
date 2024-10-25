@@ -228,3 +228,175 @@ export const PlayIcon = (
     />
   </svg>
 );
+
+export const PlayIcon2 = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="25"
+    height="25"
+    viewBox="0 0 25 25"
+    fill="none"
+  >
+    <path
+      d="M4.16669 13.0446V9.33625C4.16669 4.73209 7.4271 2.84667 11.4167 5.14876L14.6354 7.00292L17.8542 8.85709C21.8438 11.1592 21.8438 14.93 17.8542 17.2321L14.6354 19.0863L11.4167 20.9404C7.4271 23.2425 4.16669 21.3571 4.16669 16.7529V13.0446Z"
+      stroke="white"
+      strokeWidth="1.575"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const Previous15sIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="25"
+    height="25"
+    viewBox="0 0 25 25"
+    fill="none"
+  >
+    <path
+      d="M16.8576 11.2812H13.6701L12.8784 13.6666H15.2638C16.1388 13.6666 16.8576 14.375 16.8576 15.2604C16.8576 16.1354 16.1492 16.8541 15.2638 16.8541H12.8784"
+      stroke="white"
+      strokeWidth="1.575"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M10.1702 16.8437V11.2812L8.60767 13.0208"
+      stroke="white"
+      strokeWidth="1.575"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M10.6703 4.65614L12.7328 2.08325"
+      stroke="white"
+      strokeWidth="1.575"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.34722 8.12469C4.19097 9.66636 3.47223 11.5726 3.47223 13.6559C3.47223 18.7705 7.61808 22.9164 12.7327 22.9164C17.8472 22.9164 21.9931 18.7705 21.9931 13.6559C21.9931 8.54136 17.8472 4.39551 12.7327 4.39551C12.0243 4.39551 11.3368 4.48931 10.6702 4.64556"
+      stroke="white"
+      strokeWidth="1.575"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const Next15sIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="25"
+    height="25"
+    viewBox="0 0 25 25"
+    fill="none"
+  >
+    <path
+      d="M16.858 11.2812H13.6705L12.8788 13.6666H15.2642C16.1392 13.6666 16.858 14.375 16.858 15.2604C16.858 16.1354 16.1496 16.8541 15.2642 16.8541H12.8788"
+      stroke="white"
+      strokeWidth="1.575"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M10.1705 16.8437V11.2812L8.60797 13.0208"
+      stroke="white"
+      strokeWidth="1.575"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M14.7955 4.65614L12.733 2.08325"
+      stroke="white"
+      strokeWidth="1.575"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M20.1181 8.12469C21.2744 9.66636 21.9931 11.5726 21.9931 13.6559C21.9931 18.7705 17.8472 22.9164 12.7327 22.9164C7.61808 22.9164 3.47223 18.7705 3.47223 13.6559C3.47223 8.54136 7.61808 4.39551 12.7327 4.39551C13.441 4.39551 14.1285 4.48931 14.7951 4.64556"
+      stroke="white"
+      strokeWidth="1.575"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const MuteIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="25"
+    height="25"
+    viewBox="0 0 25 25"
+    fill="none"
+  >
+    <path
+      d="M2.08333 10.5825V14.7492C2.08333 16.8325 3.125 17.8742 5.20833 17.8742H6.69792C7.08333 17.8742 7.46875 17.9888 7.80208 18.1867L10.8438 20.093C13.4688 21.7388 15.625 20.5409 15.625 17.4471V7.88463C15.625 4.78046 13.4688 3.59296 10.8438 5.23879L7.80208 7.14504C7.46875 7.34296 7.08333 7.45754 6.69792 7.45754H5.20833C3.125 7.45754 2.08333 8.49921 2.08333 10.5825Z"
+      stroke="white"
+      strokeWidth="1.5625"
+    />
+    <path
+      d="M22.9167 14.7078L18.7917 10.5828"
+      stroke="white"
+      strokeWidth="1.5625"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M22.875 10.6241L18.75 14.7491"
+      stroke="white"
+      strokeWidth="1.5625"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const FullscreenIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="25"
+    height="25"
+    viewBox="0 0 25 25"
+    fill="none"
+  >
+    <path
+      d="M4.86111 9.63539L4.86111 6.77081C4.86111 5.7161 5.71612 4.86108 6.77083 4.86108L9.63542 4.86108M20.1389 15.3646V18.2291C20.1389 19.2838 19.2839 20.1389 18.2292 20.1389H15.3646M15.3646 4.86108L18.2292 4.86108C19.2839 4.86108 20.1389 5.7161 20.1389 6.77081V9.63539M9.63542 20.1389H6.77083C5.71612 20.1389 4.86111 19.2839 4.86111 18.2291L4.86111 15.3646"
+      stroke="white"
+      strokeWidth="1.43229"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const CloseIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="46"
+    height="46"
+    viewBox="0 0 46 46"
+    fill="none"
+  >
+    <path
+      d="M17.5758 28.4241L28.4241 17.5758"
+      stroke="white"
+      strokeWidth="1.46809"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M28.4241 28.4241L17.5758 17.5758"
+      stroke="white"
+      strokeWidth="1.46809"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[url(/bg-vector.svg)] bg-cover bg-center bg-no-repeat p-[20px] sm:p-[60px]">
       <div className="mx-auto grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <div className="mb-10">
+        <div>
           <H2>Announcements</H2>
           <div className="mt-3">
             <AnnouncementCard data={ANNOUNCEMENT_DATA} />

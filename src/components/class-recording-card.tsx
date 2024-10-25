@@ -3,6 +3,9 @@
 import {SearchIcon} from "@/assets/icons";
 import Card from "./card";
 import VideoCard from "./video-card";
+import {useState} from "react";
+import VideoPlayer from "./video-player";
+import PlayerModal from "./player-modal";
 
 export default function ClassRecordingCard({
   data,
@@ -16,10 +19,26 @@ export default function ClassRecordingCard({
     videoUrl: string;
   }[];
 }) {
+  const [selectedRecording, setSelectedRecording] = useState<{
+    isOpen: boolean;
+    data: {
+      standard: number;
+      subjects: string;
+      topic: string;
+      videoUrl: string;
+    };
+  } | null>(null);
   const filterData = data;
+
+  const handleClose = () => {
+    setSelectedRecording(null);
+  };
 
   return (
     <Card className="px-6 py-8">
+      {selectedRecording && (
+        <PlayerModal data={selectedRecording?.data} handleClose={handleClose} />
+      )}
       <div className="flex items-center gap-2 rounded bg-[#4749b3]/5 px-3 py-2">
         {SearchIcon}{" "}
         <input
@@ -51,14 +70,24 @@ export default function ClassRecordingCard({
       </div>
       <div className="mt-8 flex flex-col gap-4">
         {filterData.map((video) => (
-          <VideoCard
+          <div
             key={video.id}
-            standard={video.standard}
-            subjects={video.subjects}
-            topic={video.topic}
-            videoUrl={video.videoUrl}
-            date={video.date}
-          />
+            onClick={() => {
+              setSelectedRecording({
+                isOpen: true,
+                data: video,
+              });
+            }}
+            className="cursor-pointer"
+          >
+            <VideoCard
+              standard={video.standard}
+              subjects={video.subjects}
+              topic={video.topic}
+              videoUrl={video.videoUrl}
+              date={video.date}
+            />
+          </div>
         ))}
       </div>
     </Card>
