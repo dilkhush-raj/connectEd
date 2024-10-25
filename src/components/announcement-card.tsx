@@ -7,7 +7,7 @@ export default function AnnouncementCard({
 }) {
   return (
     <>
-      <Card className="w-[395px] border border-[#6669fe]/10 px-[20px] py-[26px]">
+      <Card className="border border-[#6669fe]/10 px-[20px] py-[26px]">
         <div className="flex flex-col gap-2">
           {data.map((item, index) => (
             <div

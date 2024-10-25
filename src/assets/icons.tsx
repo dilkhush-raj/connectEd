@@ -175,3 +175,56 @@ export const ClipboardIcon = (
     />
   </svg>
 );
+
+export const SearchIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+  >
+    <path
+      d="M7.33333 13.3333C10.647 13.3333 13.3333 10.647 13.3333 7.33331C13.3333 4.0196 10.647 1.33331 7.33333 1.33331C4.01962 1.33331 1.33333 4.0196 1.33333 7.33331C1.33333 10.647 4.01962 13.3333 7.33333 13.3333Z"
+      stroke="black"
+      strokeOpacity="0.2"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12.6199 13.7932C12.9733 14.8599 13.7799 14.9665 14.3999 14.0332C14.9666 13.1799 14.5933 12.4799 13.5666 12.4799C12.8066 12.4732 12.3799 13.0665 12.6199 13.7932Z"
+      stroke="black"
+      strokeOpacity="0.2"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const PlayIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="25"
+    viewBox="0 0 24 25"
+    fill="none"
+  >
+    <path
+      d="M9.09998 12.4741V10.9941C9.09998 9.08411 10.45 8.31411 12.1 9.26411L13.38 10.0041L14.66 10.7441C16.31 11.6941 16.31 13.2541 14.66 14.2041L13.38 14.9441L12.1 15.6841C10.45 16.6341 9.09998 15.8541 9.09998 13.9541V12.4741Z"
+      stroke="white"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12 22.4741C17.5228 22.4741 22 17.997 22 12.4741C22 6.95127 17.5228 2.47412 12 2.47412C6.47715 2.47412 2 6.95127 2 12.4741C2 17.997 6.47715 22.4741 12 22.4741Z"
+      stroke="white"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
