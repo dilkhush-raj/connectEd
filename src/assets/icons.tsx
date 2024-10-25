@@ -400,3 +400,35 @@ export const CloseIcon = (
     />
   </svg>
 );
+
+export const VideoCameraIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="28"
+    height="25"
+    viewBox="0 0 28 25"
+    fill="none"
+  >
+    <path
+      d="M14.4417 21.0166H9.17502C6.54169 21.0166 5.66669 19.2666 5.66669 17.5083V10.4916C5.66669 7.85828 6.54169 6.98328 9.17502 6.98328H14.4417C17.075 6.98328 17.95 7.85828 17.95 10.4916V17.5083C17.95 20.1416 17.0667 21.0166 14.4417 21.0166Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M20.2667 18.25L17.95 16.625V11.3667L20.2667 9.74165C21.4 8.94999 22.3333 9.43332 22.3333 10.825V17.175C22.3333 18.5667 21.4 19.05 20.2667 18.25Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M13.5833 13.1667C14.2737 13.1667 14.8333 12.607 14.8333 11.9167C14.8333 11.2263 14.2737 10.6667 13.5833 10.6667C12.893 10.6667 12.3333 11.2263 12.3333 11.9167C12.3333 12.607 12.893 13.1667 13.5833 13.1667Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);

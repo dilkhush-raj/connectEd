@@ -3,6 +3,7 @@ import {QUICK_LINKS, ANNOUNCEMENT_DATA, CLASS_RECORDINGS} from "@/assets/data";
 import {H2} from "@/components/ui/typography";
 import AnnouncementCard from "@/components/announcement-card";
 import ClassRecordingCard from "@/components/class-recording-card";
+import Schedules from "@/components/schedules";
 
 export default function Home() {
   return (
@@ -32,6 +33,12 @@ export default function Home() {
           <H2>Access Class Recordings</H2>
           <div className="mt-3">
             <ClassRecordingCard data={CLASS_RECORDINGS} />
+          </div>
+        </div>
+        <div>
+          <H2>Your Class Schedule</H2>
+          <div className="mt-3">
+            <Schedules />
           </div>
         </div>
       </div>
