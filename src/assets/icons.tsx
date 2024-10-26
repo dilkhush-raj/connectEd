@@ -1,8 +1,8 @@
 export const BookIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="26"
-    height="26"
+    width="100%"
+    height="100%"
     viewBox="0 0 26 26"
     fill="none"
   >
@@ -40,8 +40,8 @@ export const BookIcon = (
 export const ContactIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="26"
-    height="26"
+    width="100%"
+    height="100%"
     viewBox="0 0 26 26"
     fill="none"
   >
@@ -93,8 +93,8 @@ export const ContactIcon = (
 export const WhatsAppIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="26"
-    height="26"
+    width="100%"
+    height="100%"
     viewBox="0 0 26 26"
     fill="none"
   >
@@ -397,6 +397,53 @@ export const CloseIcon = (
       strokeWidth="1.46809"
       strokeLinecap="round"
       strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const VideoCameraIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="28"
+    height="25"
+    viewBox="0 0 28 25"
+    fill="none"
+  >
+    <path
+      d="M14.4417 21.0166H9.17502C6.54169 21.0166 5.66669 19.2666 5.66669 17.5083V10.4916C5.66669 7.85828 6.54169 6.98328 9.17502 6.98328H14.4417C17.075 6.98328 17.95 7.85828 17.95 10.4916V17.5083C17.95 20.1416 17.0667 21.0166 14.4417 21.0166Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M20.2667 18.25L17.95 16.625V11.3667L20.2667 9.74165C21.4 8.94999 22.3333 9.43332 22.3333 10.825V17.175C22.3333 18.5667 21.4 19.05 20.2667 18.25Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M13.5833 13.1667C14.2737 13.1667 14.8333 12.607 14.8333 11.9167C14.8333 11.2263 14.2737 10.6667 13.5833 10.6667C12.893 10.6667 12.3333 11.2263 12.3333 11.9167C12.3333 12.607 12.893 13.1667 13.5833 13.1667Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const BellIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 14 16"
+    fill="none"
+  >
+    <path
+      d="M7.16644 6.10352e-05C5.68355 6.10352e-05 4.26139 0.589139 3.21282 1.6377C2.16425 2.68627 1.57518 4.10843 1.57518 5.59133V8.57458L0.377402 11.574C0.339887 11.6682 0.325998 11.7701 0.336945 11.8709C0.347893 11.9717 0.383345 12.0683 0.440208 12.1523C0.49707 12.2362 0.573615 12.305 0.663161 12.3525C0.752707 12.4001 0.852532 12.425 0.953924 12.4251H13.379C13.4804 12.425 13.5802 12.4001 13.6697 12.3525C13.7593 12.305 13.8358 12.2362 13.8927 12.1523C13.9495 12.0683 13.985 11.9717 13.9959 11.8709C14.0069 11.7701 13.993 11.6682 13.9555 11.574L12.7577 8.57334V5.59133C12.7577 4.10843 12.1686 2.68627 11.1201 1.6377C10.0715 0.589139 8.64934 6.10352e-05 7.16644 6.10352e-05ZM7.16644 15.5314C6.61542 15.5315 6.07998 15.3485 5.64431 15.0111C5.20864 14.6737 4.89747 14.2011 4.75971 13.6676H9.57317C9.43542 14.2011 9.12424 14.6737 8.68857 15.0111C8.25291 15.3485 7.71747 15.5315 7.16644 15.5314Z"
+      fill="currentColor"
     />
   </svg>
 );
