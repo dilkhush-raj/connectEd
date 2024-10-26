@@ -34,7 +34,7 @@ export default function ClassRecordingCard({
   };
 
   return (
-    <Card className="px-6 py-8">
+    <Card className="h-full px-6 py-8">
       {selectedRecording && (
         <PlayerModal data={selectedRecording?.data} handleClose={handleClose} />
       )}

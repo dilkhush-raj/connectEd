@@ -70,12 +70,14 @@ const ScheduleItem = ({
 }) => {
   return (
     <div
-      className={`flex cursor-pointer items-center justify-between gap-2 rounded bg-[#f2f2ff] p-4 hover:text-white ${index % 2 === 0 ? "hover:bg-[#4749b3]" : "hover:bg-[#e66dff]"}`}
+      className={`group flex cursor-pointer items-center justify-between gap-2 rounded bg-[#f2f2ff] p-4 transition-all duration-100 hover:text-white ${index % 2 === 0 ? "text-[#4749b3] hover:bg-[#4749b3]" : "text-[#e66dff] hover:bg-[#e66dff]"}`}
     >
       <div className="flex items-center gap-2">
         <div>{VideoCameraIcon}</div>
         <div className="flex flex-col gap-[9px]">
-          <p className="text-xs font-light leading-none">
+          <p
+            className={`text-xs font-light leading-none group-hover:text-white ${index % 2 === 0 ? "text-[#9899de]" : "text-[#efaafd]"}`}
+          >
             Class {standard}, {subject} | Live Class
           </p>
           <p className="font-semibold leading-none">{date}</p>

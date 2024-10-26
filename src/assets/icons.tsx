@@ -427,8 +427,8 @@ export const VideoCameraIcon = (
       d="M13.5833 13.1667C14.2737 13.1667 14.8333 12.607 14.8333 11.9167C14.8333 11.2263 14.2737 10.6667 13.5833 10.6667C12.893 10.6667 12.3333 11.2263 12.3333 11.9167C12.3333 12.607 12.893 13.1667 13.5833 13.1667Z"
       stroke="currentColor"
       strokeWidth="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );

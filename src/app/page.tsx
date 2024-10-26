@@ -7,12 +7,18 @@ import Schedules from "@/components/schedules";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[url(/bg-vector.svg)] bg-cover bg-center bg-no-repeat p-[20px] sm:p-[60px]">
-      <div className="mx-auto grid grid-cols-1 gap-6 lg:grid-cols-3">
+    <main className="min-h-[calc(100vh-98px)] bg-[url(/bg-vector.svg)] bg-cover bg-center bg-no-repeat p-[20px] sm:p-[60px]">
+      <div className="mx-auto grid grid-cols-1 gap-6 lg:grid-cols-[38%_1fr_1fr]">
         <div>
           <H2>Announcements</H2>
           <div className="mt-3">
             <AnnouncementCard data={ANNOUNCEMENT_DATA} />
+          </div>
+          <div className="mt-3 hidden lg:block">
+            <H2>Your Class Schedule</H2>
+            <div className="mt-3">
+              <Schedules />
+            </div>
           </div>
         </div>
         <div className="">
@@ -29,16 +35,16 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div>
-          <H2>Access Class Recordings</H2>
-          <div className="mt-3">
-            <ClassRecordingCard data={CLASS_RECORDINGS} />
-          </div>
-        </div>
-        <div>
+        <div className="lg:hidden">
           <H2>Your Class Schedule</H2>
           <div className="mt-3">
             <Schedules />
+          </div>
+        </div>
+        <div>
+          <H2>Access Class Recordings</H2>
+          <div className="mt-3 flex flex-col">
+            <ClassRecordingCard data={CLASS_RECORDINGS} />
           </div>
         </div>
       </div>
