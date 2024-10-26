@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import {SearchIcon} from "@/assets/icons";
+import {ContactIcon, SearchIcon} from "@/assets/icons";
 import Card from "./card";
 import VideoCard from "./video-card";
 import {useState, useMemo} from "react";
@@ -141,9 +141,13 @@ export default function ClassRecordingCard({
             </div>
           ))
         ) : (
-          <div className="text-center text-gray-500">
-            No recordings found matching your filters
-          </div>
+          <Card className="flex flex-col items-center justify-center bg-[#6F6F6F] py-10 text-center text-white">
+            <div className="mx-auto h-[26px] w-[26px]">{ContactIcon}</div>
+            <p className="text-2xl font-bold">No Live Classes</p>
+            <p className="text-xs font-normal">
+              You have no live classes scheduled for today.
+            </p>
+          </Card>
         )}
       </div>
     </Card>
