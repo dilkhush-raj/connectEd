@@ -1,6 +1,8 @@
 "use client";
 import {VideoCameraIcon} from "@/assets/icons";
 import Card from "./card";
+import {useState} from "react";
+import JoiningClassModal from "./JoiningClassModal";
 
 const SCHEDULES_DATA: {
   standard: number;
@@ -10,7 +12,7 @@ const SCHEDULES_DATA: {
 }[] = [
   {
     standard: 7,
-    subject: "Science",
+    subject: "Math",
     date: "Tuesday, 5:00 - 5:50 PM",
     day: "Yesterday",
   },
@@ -22,7 +24,7 @@ const SCHEDULES_DATA: {
   },
   {
     standard: 7,
-    subject: "Science",
+    subject: "Math",
     date: "Tuesday, 5 - 5:50 PM",
     day: "Tomorrow",
   },
@@ -35,19 +37,42 @@ const SCHEDULES_DATA: {
 ];
 
 export default function Schedules() {
+  const [selectedSchedule, setSelectedSchedule] = useState<{
+    isOpen: boolean;
+    data: {
+      standard: number;
+      subject: string;
+      date: string;
+      day: string;
+    };
+  } | null>(null);
+
+  const handleClose = () => {
+    setSelectedSchedule(null);
+  };
   return (
-    <div>
+    <div className="relative">
+      <JoiningClassModal
+        data={selectedSchedule?.data || null}
+        handleClose={handleClose}
+      />
       <Card className="px-5 py-8">
         <div className="flex flex-col gap-2">
           {SCHEDULES_DATA.map((schedule, index) => (
-            <ScheduleItem
+            <div
               key={index}
-              index={index}
-              standard={schedule.standard}
-              subject={schedule.subject}
-              date={schedule.date}
-              day={schedule.day}
-            />
+              onClick={() =>
+                setSelectedSchedule({isOpen: true, data: schedule})
+              }
+            >
+              <ScheduleItem
+                index={index}
+                standard={schedule.standard}
+                subject={schedule.subject}
+                date={schedule.date}
+                day={schedule.day}
+              />
+            </div>
           ))}
         </div>
       </Card>
