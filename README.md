@@ -28,7 +28,7 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/dilkhush-raj/conneceEd.git
+   git clone https://github.com/dilkhush-raj/connectEd.git
    cd connectEd
    ```
 
