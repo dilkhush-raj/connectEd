@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: "ConnectEd",
   description: "This project is a student portal for ConnectEd",
   keywords: "ConnectEd, Student Portal, Next.js, React, Tailwind CSS",
+  openGraph: {
+    title: "ConnectEd",
+    description: "This project is a student portal for ConnectEd",
+    images: "https://connect-ed.dilkhushraj.me/og.png",
+  },
 };
 
 const outfit = Outfit({
