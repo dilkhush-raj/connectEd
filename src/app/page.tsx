@@ -41,9 +41,9 @@ export default function Home() {
             <Schedules />
           </div>
         </div>
-        <div>
+        <div className="overflow-hidden rounded-[20px] md:max-h-[618px]">
           <H2>Access Class Recordings</H2>
-          <div className="mt-3 flex flex-col">
+          <div className="mt-3 h-full">
             <ClassRecordingCard data={CLASS_RECORDINGS} />
           </div>
         </div>
