@@ -19,7 +19,7 @@ export default function JoiningClassModal({
       <div onClick={handleClose} className="fixed inset-0 z-50 bg-black/50">
         {/* This is masking area which will be visible only when modal is open and close the modal */}
       </div>
-      <div className="absolute left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 lg:fixed">
+      <div className="fixed inset-0 left-1/2 top-1/2 z-50 w-full max-w-[500px] -translate-x-1/2 -translate-y-1/2 px-5 md:max-w-max">
         <Card className="flex items-center gap-2 px-10 py-[10px] text-[#E66DFF]">
           <div className="h-4 w-[14px] flex-shrink-0">{BellIcon}</div>
           <p className="text-xs font-bold leading-[99%] lg:text-lg">

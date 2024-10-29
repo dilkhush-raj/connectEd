@@ -23,8 +23,8 @@ export default function AnnouncementCard({
     <>
       {/* Mobile View (Slider) */}
       <div className="block md:hidden">
-        <Card className="border border-[#6669fe]/10 px-5 py-6">
-          <div className="relative min-h-[64px] overflow-hidden">
+        <Card className="border border-[#6669fe]/10 p-3 pb-0">
+          <div className="relative min-h-[48px] overflow-hidden">
             {data.map((item, index) => (
               <div
                 key={index}
@@ -34,7 +34,7 @@ export default function AnnouncementCard({
                     : "translate-x-full opacity-0"
                 }`}
               >
-                <div className="flex items-center gap-2 rounded bg-[#f7f7f7] py-2 pl-4 pr-10 text-[#4749b3]">
+                <div className="flex items-center gap-2 rounded-[4px] bg-[#f7f7f7] py-2 pl-4 pr-10 text-[#4749b3]">
                   <div className="h-6 w-6">{item.icon}</div>
                   <p className="text-xs font-light">{item.announcement}</p>
                 </div>
@@ -46,10 +46,8 @@ export default function AnnouncementCard({
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`h-2 rounded-full transition-all ${
-                  index === currentIndex
-                    ? "w-4 bg-[#4749b3]"
-                    : "w-2 bg-[#6669fe]/20"
+                className={`my-2 h-2 w-2 rounded-full transition-all ${
+                  index === currentIndex ? "bg-[#4749b3]" : "bg-[#6669fe]/20"
                 }`}
                 aria-label={`Go to announcement ${index + 1}`}
               />
